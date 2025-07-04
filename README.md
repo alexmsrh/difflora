@@ -17,7 +17,7 @@ Then, the model can be trained and used for inference like a usual pytorch/trans
 
 
 ## Cite
-
+```
 @misc{
 anonymous2025difflora,
 title={DiffLo{RA}: Differential Low-Rank Adapters for Large Language Models},
@@ -25,3 +25,4 @@ author={Anonymous},
 year={2025},
 url={https://openreview.net/forum?id=7GLpLHIbvb}
 }
+```
