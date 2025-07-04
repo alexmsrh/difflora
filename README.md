@@ -15,6 +15,10 @@ An example config and code to initialize the differential attention modules are 
 
 Then, the model can be trained and used for inference like a usual pytorch/transformers model. 
 
+To use flash attention:
+```bash
+pip install flex-head-fa --no-build-isolation
+```
 
 ## Cite
 ```
