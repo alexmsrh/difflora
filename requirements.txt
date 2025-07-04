@@ -1,0 +1,5 @@
+torch
+transformers==4.46.3
+accelerate
+omegaconf
+numpy<2.0

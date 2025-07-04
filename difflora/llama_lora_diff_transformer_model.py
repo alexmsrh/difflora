@@ -13,8 +13,8 @@ from safetensors.torch import load_file
 from transformers.generation.utils import GenerationMixin
 from transformers.modeling_utils import PretrainedConfig, PreTrainedModel
 from transformers.models.llama.modeling_llama import LlamaPreTrainedModel, LlamaForCausalLM, LlamaModel, LlamaMLP, LlamaAttention, LlamaFlashAttention2, LlamaRMSNorm, apply_rotary_pos_emb, repeat_kv
-from models.generators.DiffTransformer.custom_flash_attn import flash_attn_func
-from models.generators.DiffTransformer.llama_lora_diff_transformer_config import LlamaLoraDiffTransformerConfig
+from difflora.custom_flash_attn import flash_attn_func
+from difflora.llama_lora_diff_transformer_config import LlamaLoraDiffTransformerConfig
 from transformers.cache_utils import Cache, StaticCache
 from transformers.utils import logging
 
