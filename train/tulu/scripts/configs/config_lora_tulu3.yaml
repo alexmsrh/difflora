@@ -1,0 +1,28 @@
+model_revision: main
+use_flash_attn: true
+use_slow_tokenizer: true
+preprocessing_num_workers: 16
+per_device_train_batch_size: 1 # note, this is set up for 8 GPUs
+gradient_accumulation_steps: 64 # effective batch size 64 with 1 GPU
+learning_rate: 1.0e-4 # LR taken from aelx
+max_seq_length: 4096
+lr_scheduler_type: linear
+warmup_ratio: 0.03
+weight_decay: 0.0
+num_train_epochs: 1
+with_tracking: true
+logging_steps: 100
+checkpointing_steps: epoch
+output_dir: output/llama_3_8b_lora
+use_lora: True
+lora_rank: 32
+lora_alpha: 64
+learn_lambda: True
+lora_negative_term_only: false
+negative_term_lora_only: true
+lora_dropout: 0.1
+push_to_hub: false
+diff_attn_implementation: flash_attention_2
+try_launch_beaker_eval_jobs: false
+dataset_mixer:
+ allenai/tulu-3-sft-mixture: 1.0
