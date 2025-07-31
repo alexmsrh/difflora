@@ -3,3 +3,9 @@ transformers==4.46.3
 accelerate
 omegaconf
 numpy<2.0
+
+# train requirements
+datasets
+py-cpuinfo # for deepspeed
+deepspeed
+peft
