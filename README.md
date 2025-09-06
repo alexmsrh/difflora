@@ -5,6 +5,8 @@ This repository contains the classes to load the differential low rank adapters 
 
 ## Quickstart
 
+Create a conda env with python 3.10. Then install requirements
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -15,9 +17,7 @@ An example config and code to initialize the differential attention modules are 
 
 ## Train
 
-#### TODO: how to use training scripts
-
-Then, the model can be trained and used for inference like a usual pytorch/transformers model. 
+Then, the model can be trained and used for inference like a usual pytorch/transformers model. The scripts we used are provided in `train/tulu/scripts`.
 
 To use flash attention:
 ```bash
